@@ -21,6 +21,7 @@ body {
 	text-decoration: none;
 	color: #fff;
 	font-size: 2rem;
+	outline: none;
 }
 
 /* links del menu */
@@ -33,6 +34,7 @@ body {
 	text-decoration: none;
 	color: #fff;
 	font-size: 1.3rem;
+	outline: none;
 }
 
 /* icono menu */
@@ -79,6 +81,7 @@ body {
 	.links a {
 		margin-left: 40px;
 		width: 80px;
+		outline: none;
 	}
 
 	.main-link.show {
