@@ -21,7 +21,10 @@ body {
 	text-decoration: none;
 	color: #fff;
 	font-size: 2rem;
-	outline: none;
+}
+
+.logo a:active {
+	-webkit-tap-highlight-color: transparent;
 }
 
 /* links del menu */
@@ -34,7 +37,10 @@ body {
 	text-decoration: none;
 	color: #fff;
 	font-size: 1.3rem;
-	outline: none;
+}
+
+.main-link a:active {
+	-webkit-tap-highlight-color: transparent;
 }
 
 /* icono menu */
@@ -46,6 +52,10 @@ body {
 	color: #fff;
 	font-size: 2rem;
 	cursor: pointer;
+}
+
+.menu i:active {
+	-webkit-tap-highlight-color: transparent;
 }
 
 @media (max-width: 600px) {
@@ -82,6 +92,10 @@ body {
 		margin-left: 40px;
 		width: 80px;
 		outline: none;
+	}
+	
+	.links a:active {
+		-webkit-tap-highlight-color: transparent;
 	}
 
 	.main-link.show {
