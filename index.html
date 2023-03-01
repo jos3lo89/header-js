@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>hedaer-js</title>
+		<!-- css -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Fontawesone -->
+		<script
+			src="https://kit.fontawesome.com/17de7c08ae.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- css swiper -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
+	</head>
+	<body>
+		<!-- cabezera  START -->
+		<div class="main-header">
+			<div class="logo">
+				<a href="#">ota wolrd</a>
+			</div>
+
+			<div class="main-link" id="main-link">
+				<div class="links">
+					<a href="#">Inicio</a>
+					<a href="#">Peliculas</a>
+					<a href="#">Animes</a>
+					<a href="#">Nuevos</a>
+				</div>
+			</div>
+
+			<div class="menu" id="menu">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</div>
+		<!-- cabezera  END -->
+
+		<!-- Contenedor principal del slider -->
+		<div class="swiper slide">
+			<!-- contenedor adicional requerido -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<img
+						src="https://http2.mlstatic.com/D_NQ_882311-MLA53984661569_022023-OO.webp"
+						alt=""
+					/>
+				</div>
+				<div class="swiper-slide">
+					<img
+						src="https://http2.mlstatic.com/D_NQ_723420-MLA53968729213_022023-OO.webp"
+						alt=""
+					/>
+				</div>
+				<div class="swiper-slide">
+					<img
+						src="https://http2.mlstatic.com/D_NQ_880684-MLA53961830941_022023-OO.webp"
+						alt=""
+					/>
+				</div>
+			</div>
+			<!-- Si necesitamos paginación -->
+			<div class="swiper-pagination"></div>
+
+			<!-- Si necesitamos botones de navegación -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+
+			<!-- Si necesitamos barra de desplazamiento -->
+			<!-- <div class="swiper-scrollbar"></div> -->
+		</div>
+
+		<!-- JavaScript swiper -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<!-- JavaScript -->
+		<script src="js/app.js"></script>
+	</body>
+</html>

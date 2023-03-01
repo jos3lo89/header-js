@@ -1,0 +1,136 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #141c2f;
+}
+
+.main-header {
+	background: #1f2a48;
+	height: 70px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* logo del menu */
+.logo a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 2rem;
+}
+
+/* links del menu */
+.main-link .links {
+	display: flex;
+	gap: 20px;
+}
+
+.main-link a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.3rem;
+}
+
+/* icono menu */
+.menu {
+	display: none;
+}
+
+.menu i {
+	color: #fff;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+@media (max-width: 600px) {
+	.menu {
+		display: inline;
+	}
+
+	.main-header {
+		justify-content: space-between;
+		padding: 0 30px;
+	}
+
+	.main-link {
+		z-index: 9999;
+		position: fixed;
+		background: none;
+		width: 100%;
+		top: 70px;
+		height: auto;
+		left: 0;
+		right: 0;
+		bottom: 0; /*fuinciona click cualquier parte se cierra*/
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+
+	.links {
+		background: #1f2a48;
+		display: flex;
+		flex-direction: column;
+		padding: 30px 0;
+	}
+
+	.links a {
+		margin-left: 40px;
+		width: 80px;
+	}
+
+	.main-link.show {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+}
+
+/* swiper */
+.slide {
+	width: 100%;
+	height: auto;
+}
+.swiper-slide img {
+	object-fit: cover;
+	width: 100%;
+	height: 340px;
+}
+
+/* botones <- y -> */
+.slide .swiper-button-prev,
+.slide .swiper-button-next {
+	--swiper-navigation-size: 40px;
+	background: #fff;
+	height: 70px;
+	width: 50px;
+	margin-top: -35px;
+
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.slide .swiper-button-prev {
+	border-radius: 0 65px 65px 0;
+	left: 0;
+}
+
+.slide .swiper-button-next {
+	border-radius: 65px 0 0 65px;
+	right: 0;
+}
+
+.slide:hover .swiper-button-prev,
+.slide:hover .swiper-button-next {
+	opacity: 1;
+}
+
+/* bolitas de paginacion */
+.slide .swiper-pagination {
+	--swiper-pagination-color: #fff;
+	--swiper-pagination-bullet-size: 10px;
+	--swiper-pagination-bullet-inactive-color: #000;
+	--swiper-pagination-bullet-inactive-opacity: 0.2;
+	--swiper-pagination-bullet-opacity: 1;
+	--swiper-pagination-bullet-horizontal-gap: 4px;
+}
